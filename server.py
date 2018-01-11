@@ -11,7 +11,8 @@ def index():
 def process():
   print "Got Post Info"
   name = request.form['name']
-  print name
-  return redirect('/')
+  print 
+  return render_template('process.html', name = request.form['name'])
+  # return redirect('/')
 
 app.run(debug=True)
